@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اٍضافة</title>
+  <style>
+    /* ===== الهيدر ===== */
+    header {
+      background: linear-gradient(90deg, #2b68ad, #ae00ff);
+      color: rgb(255, 255, 255);
+      padding: 30px 10px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    .hero-img {
+      width: 40%;
+      max-width: 100px;
+      margin-top: 20px;
+      border-radius: 15px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* ===== الأقسام كأزرار ===== */
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .section-btn {
+      display: block;
+      background: #00aaff;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 12px;
+      font-size: 18px;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .section-btn:hover { background: #005dc1; transform: scale(1.05); }
+    .section-btn:active { background: #ff8e0c; }
+
+    /* ===== المحتوى ===== */
+    .content {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* ===== متجاوب للجوال ===== */
+    @media (max-width: 768px) {
+      .section-btn { width: 80%; font-size: 20px; }
+      .content { font-size: 1em; }
+    }
+
+ body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 30px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            color: #202933;
+                    }
+        h2 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            background-color: #e8eaf6;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .source {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+                .partnership {
+            background-color: #d1f2eb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .partnership p {
+            margin: 5px 0;
+        }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>إضافة</h1>
+  <img src="./images/teeeam.png" alt="إضافة" class="hero-img">
+</header>
+
+<main class="content"><br>
+ <h1>المصادر</h1>
+    
+    <ul>
+        <li>
+            <h2>تعريف الذكاء الاصطناعي</h2>
+            <p class="source">المصدر: الهيئة السعودية للبيانات والذكاء الاصطناعي | <a href="https://sdaia.gov.sa">sdaia.gov.sa</a></p>
+        </li>
+        <li>
+            <h2>أهمية الذكاء الاصطناعي</h2>
+            <p class="source">المصدر: الهيئة السعودية للبيانات والذكاء الاصطناعي | <a href="https://sdaia.gov.sa">sdaia.gov.sa</a></p>
+        </li>
+        <li>
+            <h2>أهداف الذكاء الاصطناعي</h2>
+            <p class="source">المصدر: الهيئة السعودية للبيانات والذكاء الاصطناعي | <a href="https://sdaia.gov.sa">sdaia.gov.sa</a></p>
+        </li>
+        <li>
+            <h2>أنواع الذكاء الاصطناعي</h2>
+            <p class="source">المصدر: الهيئة السعودية للبيانات والذكاء الاصطناعي | <a href="https://sdaia.gov.sa">sdaia.gov.sa</a></p>
+        </li>
+        <li>
+            <h2>أمثلة على التطبيقات</h2>
+            <p class="source">المصدر: Google Cloud | <a href="https://cloud.google.com/ai">Applications of AI</a></p>
+        </li>
+        <li>
+            <h2>المشروعات المقترحة</h2>
+            <p class="source">المصدر: الهيئة السعودية للبيانات والذكاء الاصطناعي | <a href="https://sdaia.gov.sa">sdaia.gov.sa</a></p>
+        </li>
+    </ul><br>
+
+    <div class="partnership">
+        <p>بالشراكة مع مادة النشاط، تم إعداد هذا الموقع بمساعدة معلمة التقنية الرقمية:</p>
+        <p><strong>أ. مريم العبدلي</strong></p>
+        <p>وبإشراف المعلمة:</p>
+        <p><strong>أ. مكية عطية</strong></p>
+    </div>
+<br>
+    <h1>المشاركات في المشروع:</h1>
+    <ul>
+        <li>ريتاج جباري</li>
+        <li>سديم رميلي</li>
+        <li>طيبة سيد</li>
+        <li>رهيد معشي</li>
+        <li>حلا أبو غزالة</li>
+        <li>غسق الأقصم</li>
+        <li>حنين أبو علّة</li>
+        <li>ريف حبتور</li>
+        <li>رفيف علاقي</li>
+        <li>زهراء المزجاجي</li>
+        <li>ريماس محب</li>
+        <li>إلهام القديمي</li>
+        <li>شموخ شهارة</li>
+        <li>شهد الصطوف</li>
+        <li>ذكرى ناصر</li>
+        <li>حنين هجري</li>
+        <li>تالين بقال</li>
+    </ul>
+  </main>
+
+<main class="sections">
+  <a href="index.html" class="section-btn">الرئيسية</a>
+</main>
+
+<script>
+  // تأثير الضغط على الأزرار
+  const buttons = document.querySelectorAll('.section-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.style.transform = 'scale(0.95)';
+      setTimeout(() => { btn.style.transform = 'scale(1)'; }, 200);
+    });
+  });
+  
+</script>
+
+</body>
+</html>

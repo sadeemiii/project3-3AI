@@ -1,0 +1,149 @@
+/* عام */
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Cairo',sans-serif;}
+body {background:#f5f6fa; color:#333; line-height:1.6; scroll-behavior:smooth;}
+a {text-decoration:none; color:inherit;}
+
+/* رأس الموقع */
+header {background:linear-gradient(90deg,#6a11cb,#2575fc); color:#fff; padding:15px 30px; position:fixed; top:0; width:100%; z-index:1000; box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+header .logo {font-size:28px; font-weight:bold;}
+nav {display:flex; justify-content:space-between; align-items:center;}
+.nav-links {list-style:none; display:flex; gap:25px;}
+.nav-links li a {color:#fff; font-weight:600; transition:.3s;}
+.nav-links li a:hover {color:#ffdd59;}
+.hamburger {display:none; flex-direction:column; cursor:pointer; gap:5px;}
+.hamburger div {width:28px; height:3px; background:#fff; border-radius:2px;}
+@media(max-width:768px){
+  .nav-links{
+    position:absolute; top:60px; right:0; width:100%; flex-direction:column; display:none; 
+    background:linear-gradient(90deg,#6a11cb,#2575fc); text-align:center; padding:20px 0; 
+    border-top-left-radius:10px; border-top-right-radius:10px;
+  } 
+  .nav-links.active{display:flex;} 
+  .hamburger{display:flex;}
+}
+
+/* واجهة رئيسية */
+.hero {display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:120px 20px 80px 20px; background:linear-gradient(to right,#6a11cb,#2575fc); color:#fff; min-height:80vh; position:relative; overflow:hidden;}
+.hero h1{font-size:48px; margin-bottom:20px; z-index:1; position:relative;}
+.hero p{font-size:22px; max-width:800px; margin-bottom:40px; z-index:1; position:relative;}
+.hero img {width:250px; animation: float 3s ease-in-out infinite; z-index:1; position:relative;}
+@keyframes float {0%,100%{transform:translateY(0);}50%{transform:translateY(-30px);}}
+
+/* دوائر خلفية */
+.hero::before, .hero::after {content:""; position:absolute; border-radius:50%; background:rgba(255,255,255,0.1); z-index:0;}
+.hero::before {width:300px; height:300px; top:-50px; left:-50px; animation: move1 6s ease-in-out infinite alternate;}
+.hero::after {width:400px; height:400px; bottom:-100px; right:-100px; animation: move2 8s ease-in-out infinite alternate;}
+@keyframes move1 {0%{transform:translate(0,0);}100%{transform:translate(30px,50px);}}
+@keyframes move2 {0%{transform:translate(0,0);}100%{transform:translate(-50px,-30px);}}
+
+/* أقسام مختصرة */
+.sections-overview {display:flex; flex-wrap:wrap; justify-content:center; gap:30px; padding:50px 20px;}
+.section-card {background:#fff; border-radius:15px; padding:25px; width:260px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:.3s; opacity:0; transform:translateY(50px);}
+.section-card.show {opacity:1; transform:translateY(0);}
+.section-card:hover {transform:translateY(-10px); box-shadow:0 10px 25px rgba(0,0,0,0.2);}
+.section-card h2{color:#6a11cb; margin-bottom:15px;}
+.section-card p{margin-bottom:25px;} /* زيادة المسافة عن الصورة */
+.section-card img{width:100%; max-width:250px; margin-top:20px; border-radius:10px; animation: float 3s ease-in-out infinite;}
+
+/* أقسام مفصلة */
+section.content-section{max-width:1000px;margin:100px auto 50px auto;padding:50px 20px;text-align:center;opacity:0; transform:translateY(50px); transition:1s;}
+section.content-section.show{opacity:1; transform:translateY(0);}
+section.content-section h2{font-size:36px;color:#6a11cb;margin-bottom:20px;}
+section.content-section p{font-size:20px;margin-bottom:25px;}
+section.content-section img{width:100%; max-width:500px; margin-top:20px; display:block; border-radius:10px; animation: float 3s ease-in-out infinite;}
+
+/* أزرار */
+.btn{display:inline-block;background:#6a11cb;color:#fff;padding:10px 20px;border-radius:30px; transition:.3s;}
+.btn:hover{background:#2575fc;}
+
+/* فوتر */
+footer{background:#333;color:#fff;text-align:center;padding:30px 20px; margin-top:50px;}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(90deg, #0078ff, #00c6ff);
+  color: white;
+  padding: 30px 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  background: #0078ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #005dc1;
+  transform: scale(1.05);
+}
+
+.hero img {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+footer {
+  background: #0078ff;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.back {
+  display: inline-block;
+  background: #00c6ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.back:hover {
+  background: #0096cc;
+}
+
+/* ===== الإعدادات العامة ===== */
+body {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+/* الهيدر ثابت الحجم */
+header {
+  background: linear-gradient(90deg, #0078ff, #00c6ff);
+  color: white;
+  padding: 25px 10px;
+  position: relative;
+  z-index: 1;
+}
+

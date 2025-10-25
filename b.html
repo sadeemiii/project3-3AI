@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أهميةالذكاءالاصطناعي</title>
+  <style>
+    /* ===== الهيدر ===== */
+    header {
+      background: linear-gradient(90deg, #2b68ad, #ae00ff);
+      color: rgb(255, 255, 255);
+      padding: 30px 10px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    .hero-img {
+      width: 40%;
+      max-width: 100px;
+      margin-top: 20px;
+      border-radius: 15px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    /* ===== الأقسام كأزرار ===== */
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .section-btn {
+      display: block;
+      background: #00aaff;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 12px;
+      font-size: 18px;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .section-btn:hover { background: #005dc1; transform: scale(1.05); }
+    .section-btn:active { background: #ff6600; }
+
+    /* ===== المحتوى ===== */
+    .content {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* ===== متجاوب للجوال ===== */
+    @media (max-width: 768px) {
+      .section-btn { width: 80%; font-size: 20px; }
+      .content { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>أهمية الذكاء الاصطناعي</h1>
+  <img src="./images\knowladge.png" alt="تعريف الذكاء الاصطناعي" class="hero-img">
+</header>
+
+<main class="content">
+  <ul>
+    <li><strong>تسريع الإنجاز:</strong> يساعد الذكاء الاصطناعي على أداء المهام بسرعة ودقة تفوق الإنسان، مثل تحليل البيانات ومعالجة المعلومات.</li>
+    <li><strong>تحسين جودة الحياة:</strong> يُستخدم في التطبيقات الذكية مثل المساعدات الصوتية، والسيارات ذاتية القيادة، والرعاية الصحية الذكية.</li>
+    <li><strong>زيادة الدقة وتقليل الأخطاء:</strong> يتميّز بقدرته على اتخاذ قرارات دقيقة اعتمادًا على كميات ضخمة من البيانات، دون تأثر بالعواطف أو التعب.</li>
+    <li><strong>دعم الابتكار:</strong> يُسهم في تطوير تقنيات جديدة مثل الروبوتات، والواقع المعزز، والتحليل التنبؤي.</li>
+    <li><strong>رفع الكفاءة في العمل:</strong> يُستخدم في المصانع، والخدمات اللوجستية، والتعليم، والزراعة لتحسين الإنتاجية وتقليل التكاليف.</li>
+    <li><strong>اتخاذ قرارات أفضل:</strong> من خلال تحليل كمٍّ هائل من البيانات، يساعد في اتخاذ قرارات مدروسة في مجالات الاقتصاد، والطب، والإدارة.</li>
+  </ul>
+</main>
+
+<main class="sections">
+  <a href="index.html" class="section-btn">الرئيسية</a>
+
+</main>
+
+<script>
+  // تأثير الضغط على الأزرار
+  const buttons = document.querySelectorAll('.section-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.style.transform = 'scale(0.95)';
+      setTimeout(() => { btn.style.transform = 'scale(1)'; }, 200);
+    });
+  });
+</script>
+
+</body>
+</html>
